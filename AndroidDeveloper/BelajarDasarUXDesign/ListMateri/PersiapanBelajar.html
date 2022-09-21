@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Belajar Dasar UX Design - MyWiki</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="../BelajarDasarUXDesign.html">Back</a>
+    <div>
+        <a href="#">Persiapan Belajar</a><a href="#">Konsep Dasar UX (User Experience) Design</a><a href="#">Empathize,
+            Define, dan Ideate</a><a href="#">Storyboard dan Wireframe</a><a href="#">High-Fidelity Prototype</a><a
+            href="#">UX Research dan Dokumentasi</a><a href="#">Penutup</a>
+    </div>
+    <h2>Persiapan Belajar</h2>
+    <p>Click on the buttons inside the tabbed menu:</p>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Prasyarat Kemampuan')">Prasyarat Kemampuan</button>
+        <button class="tablinks" onclick="openCity(event, 'Prasyarat Tools')">Prasyarat Tools</button>
+        <button class="tablinks" onclick="openCity(event, 'Glosarium')">Glosarium</button>
+        <button class="tablinks" onclick="openCity(event, 'Daftar Referensi')">Daftar Referensi</button>
+    </div>
+
+    <div id="Prasyarat Kemampuan" class="tabcontent">
+        <h2>Prasyarat Kemampuan</h2>
+        <p>Tidak ada persyaratan kemampuan untuk mengikuti materi ini. Yang terpenting adalah Anda harus bisa belajar
+            mandiri, berkomitmen, benar-benar punya rasa ingin tahu, dan tertarik pada subjek materi, karena sebaik apa
+            pun materi yang akan dipelajari, tidak akan berguna tanpa keseriusan Anda untuk belajar, berlatih, dan
+            mencoba.
+        </p>
+    </div>
+
+    <div id="Prasyarat Tools" class="tabcontent">
+        <h2>Prasyarat Tools</h2>
+        <p>Sebelum Anda mempelajari materi, Anda harus memiliki prasyarat tools yang perlu dipenuhi terlebih dahulu.
+            Berikut beberapa tools yang wajib Anda gunakan.</p>
+
+        <h4>Komputer/Laptop</h4>
+        <p>Komputer/Laptop menjadi tools wajib untuk mengikuti materi kali ini. Anda bebas menggunakan sistem operasi
+            apa
+            saja, baik Windows, Linux, atau pun MacOS. Pastikan komputer atau laptop yang Anda gunakan juga terhubung
+            dengan
+            internet. Untuk spesifikasi yang digunakan minimal adalah sebagai berikut:</p>
+        <ul>
+            <li>Prosesor : Intel Celeron (Rekomendasi Core i3 ke atas)</li>
+            <li>RAM : 1GB (Rekomendasi 2GB)</li>
+            <li>Resolusi layar : 1366 x 768 (Rekomendasi Full HD 1920 x 1080)</li>
+        </ul>
+
+        <h4>Web Browser</h4>
+        <p>Selain komputer/laptop, tools lain yang diperlukan adalah Web Browser. Web Browser yang digunakan pun
+            bervariasi, bisa menggunakan Google Chrome, Mozilla Firefox, Microsoft Edge, atau browser lainnya. Web
+            Browser
+            ini nantinya akan digunakan untuk mengakses situs-situs dalam modul, seperti GitHub dan sumber lainnya.
+            Sebelum
+            mengakses situs-situs tersebut, pastikan kembali piranti Anda terhubung dengan internet.</p>
+
+        <h4>Google Slides, Google Sheets, dan Google Forms</h4>
+        <p>Ketiga program di atas adalah program berbasis web yang digunakan untuk mengolah data secara lebih mudah.
+            Google
+            Slides untuk data presentasi, Google Sheets digunakan untuk data spreadsheet, sedangkan Google Forms hanya
+            digunakan untuk membuat formulir survei. Anda hanya memerlukan akun Google/Gmail untuk dapat membuat dan
+            mengedit dokumen secara gratis. Untuk mengaksesnya, Anda dapat menggunakan tautan <a
+                href="https://docs.google.com/">https://docs.google.com/</a>.
+            Anda
+            akan sering menggunakan tool ini ketika dalam tahap perencanaan UX.</p>
+
+        <h4>Figma</h4>
+        <p>Figma merupakan salah satu tool yang sering digunakan untuk membuat desain dan prototipe yang mudah dan
+            gratis.
+            Ia memiliki berbagai macam fitur yang dapat membantu Anda mendesain secara lebih cepat. Ia juga mendukung
+            fitur
+            untuk berkolaborasi dengan tim, sehingga kita mendesain suatu produk bersama-sama. Untuk mengaksesnya, Anda
+            dapat menggunakan tautan www.figma.com. Anda akan menggunakan tool ini pada modul Wireframe & Low-Fidelity
+            Prototype serta High-Fidelity Prototype.</p>
+
+    </div>
+
+    <div id="Glosarium" class="tabcontent">
+        <h2>Glosarium</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <div id="Daftar Referensi" class="tabcontent">
+        <h3>Daftar Referensi</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>
